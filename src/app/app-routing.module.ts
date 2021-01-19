@@ -17,7 +17,8 @@ const routes: Routes = [
   { path: 'myaccount/cart', component: CartComponent },
   { path: 'kwyk/konnect', component: KonnectComponent },
   { path: 'account/orders', component: OrdersComponent },
-  { path: 'account/login', component: LoginComponent }
+  { path: 'account/login', component: LoginComponent },
+  { path: 'shops/products-list', component: SingleShopProductsListComponent }
 ];
 
 @NgModule({
