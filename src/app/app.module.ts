@@ -7,6 +7,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SingleItemComponent } from './single-item/single-item.component';
+import { HomeSlidesComponent } from './home-page/home-slides/home-slides.component';
+import { PopularOnKwykComponent } from './home-page/popular-on-kwyk/popular-on-kwyk.component';
+import { FeaturedCategoriesComponent } from './home-page/featured-categories/featured-categories.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { SingleItemComponent } from './single-item/single-item.component';
     HeaderComponent,
     FooterComponent,
     SingleItemComponent,
+    HomeSlidesComponent,
+    PopularOnKwykComponent,
+    FeaturedCategoriesComponent,
   ],
   imports: [
     BrowserModule,
