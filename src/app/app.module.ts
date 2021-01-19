@@ -13,6 +13,10 @@ import { FeaturedCategoriesComponent } from './home-page/featured-categories/fea
 import { FeaturedProductsComponent } from './home-page/featured-products/featured-products.component';
 import { OutletsNearYouComponent } from './home-page/outlets-near-you/outlets-near-you.component';
 import { SingleShopProductsListComponent } from './single-shop-products-list/single-shop-products-list.component';
+import { CartComponent } from './cart/cart.component';
+import { KonnectComponent } from './konnect/konnect.component';
+import { OrdersComponent } from './orders/orders.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { SingleShopProductsListComponent } from './single-shop-products-list/sin
     FeaturedProductsComponent,
     OutletsNearYouComponent,
     SingleShopProductsListComponent,
+    CartComponent,
+    KonnectComponent,
+    OrdersComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
