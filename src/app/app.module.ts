@@ -10,6 +10,9 @@ import { SingleItemComponent } from './single-item/single-item.component';
 import { HomeSlidesComponent } from './home-page/home-slides/home-slides.component';
 import { PopularOnKwykComponent } from './home-page/popular-on-kwyk/popular-on-kwyk.component';
 import { FeaturedCategoriesComponent } from './home-page/featured-categories/featured-categories.component';
+import { FeaturedProductsComponent } from './home-page/featured-products/featured-products.component';
+import { OutletsNearYouComponent } from './home-page/outlets-near-you/outlets-near-you.component';
+import { SingleShopProductsListComponent } from './single-shop-products-list/single-shop-products-list.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { FeaturedCategoriesComponent } from './home-page/featured-categories/fea
     HomeSlidesComponent,
     PopularOnKwykComponent,
     FeaturedCategoriesComponent,
+    FeaturedProductsComponent,
+    OutletsNearYouComponent,
+    SingleShopProductsListComponent,
   ],
   imports: [
     BrowserModule,

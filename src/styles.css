@@ -38450,6 +38450,9 @@ margin-bottom: 0; */
     transition: all 300ms linear;
     margin: 0;
 }
+.fps {
+  margin-top: 40px;
+}
 .banner-item:hover img {
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
