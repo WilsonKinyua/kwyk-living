@@ -41652,7 +41652,7 @@ padding: 0 !important;
 .panel-product-line {
     display: inline-block;
     vertical-align: top;
-    float: left;
+    text-align: left;
 }
 
 .panel-product-line #wishlist_button,
@@ -41776,3 +41776,5 @@ padding: 0 !important;
 
 .alert {
     margin-top: 20px;}
+
+
