@@ -19,6 +19,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { PopularOnKwykComponent } from './components/popular-on-kwyk/popular-on-kwyk.component';
 import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
 import { FeaturedCategoriesComponent } from './components/featured-categories/featured-categories.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { FeaturedCategoriesComponent } from './components/featured-categories/fe
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [provide: LocationStrategy, useClass: HashLocationStrategy],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
