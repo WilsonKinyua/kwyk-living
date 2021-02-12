@@ -1,0 +1,35 @@
+.create {
+  padding: 15px;
+  color: #579bc0 !important;
+  font-size: auto;
+}
+.create_p {
+  padding: 30px;
+  text-align: justify;
+}
+
+.facebook {
+  width: 100%;
+  background-color: #40588a;
+  box-shadow: 0 8px 10px 0 rgb(0 0 0 / 20%);
+  color: white;
+  padding: 20px;
+  font-size: auto;
+}
+.facel{
+  margin-right: 35px;
+}
+
+.facee{
+  margin-right: 35px;
+}
+
+.email {
+  width: 100%;
+  background-color: #579bc0;
+  box-shadow: 0 8px 10px 0 rgb(0 0 0 / 20%);
+  color: white;
+  padding: 20px;
+  font-size: auto;
+  margin-top: 20px;
+}

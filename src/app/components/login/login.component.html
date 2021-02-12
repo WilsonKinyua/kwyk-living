@@ -1,1 +1,146 @@
-<p>login works!</p>
+<main>
+
+  <app-header>
+
+  </app-header>
+  <aside id="notifications">
+    <div class="container">
+
+
+
+    </div>
+  </aside>
+
+
+  <section id="wrapper">
+
+    <div class="container">
+
+
+      <section id="content">
+        <div class="row">
+          <div style="margin-top: 20px;" class="col-md-7">
+            <section style="background-color: rgb(255, 255, 255); padding-top: 20px;"
+              id="checkout-personal-information-step" class="checkout-step -current -reachable js-current-step">
+              <div class="content">
+                <ul style="padding: 20px;" class="nav nav-inline my-2" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#checkout-guest-form" role="tab"
+                      aria-controls="checkout-guest-form" aria-selected="true">
+                      Sign in
+                    </a>
+                  </li>
+
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="checkout-guest-form" role="tabpanel">
+                    <form id="login-form" action="#" method="post">
+                      <section>
+                        <input type="hidden" name="back" value="">
+                        <div class="form-group row ">
+                          <label class="col-md-3 form-control-label required">
+                            Email
+                          </label>
+                          <div class="col-md-6">
+
+                            <input class="form-control" name="email" type="email" value="">
+                          </div>
+
+                          <div class="col-md-3 form-control-comment">
+
+
+                          </div>
+                        </div>
+                        <div class="form-group row ">
+                          <label class="col-md-3 form-control-label">
+                            Password
+                          </label>
+                          <div class="col-md-6">
+
+
+
+                            <div class="input-group js-parent-focus">
+                              <input class="form-control js-child-focus js-visible-password" name="password"
+                                type="password" value="" pattern=".{5,}" required>
+                              <span class="input-group-btn">
+                                <button class="btn" type="button" data-action="show-password" data-text-show="Show"
+                                  data-text-hide="Hide">
+                                  Show
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3 form-control-comment">
+                          </div>
+                        </div>
+
+
+
+
+                        <div class="forgot-password">
+                          <a rel="nofollow">
+                            Forgot your password?
+                          </a>
+                        </div>
+                      </section>
+
+
+                      <footer class="form-footer text-sm-center clearfix">
+                        <input type="hidden" name="submitLogin" value="1">
+
+                        <button class="continue btn btn-primary float-xs-right" name="continue"
+                          data-link-action="sign-in" type="submit" value="1">
+                          Login
+                        </button>
+
+                      </footer>
+
+
+                    </form>
+
+
+                  </div>
+                </div>
+
+
+
+              </div>
+            </section>
+
+
+          </div>
+          <div class="col-md-5">
+
+
+            <section style="margin-top: 20px; background-color: rgb(255, 255, 255);" id="js-checkout-summary"
+              class="card js-cart" data-refresh-url="#">
+              <div class="card-block">
+                <div class="cart-summary-products">
+                  <h3 class="create">
+                    Create your Kwyk account
+                  </h3>
+                  <p class="create_p">
+                    Create your Kwyk customer account in just a few clicks! You can register either using your e-mail address or through your Facebook account.</p>
+                  <p>
+                  </p>
+                    <button class="facebook btn btn-primary">
+                      <span class="facel"><i class="fab fa-facebook-square"></i></span> <span class="">REGISTER WITH FACEBOOK</span>
+                    </button>
+                    <button class="email btn btn-secondary">
+                      <span class="facee"><i class="fas fa-envelope"></i></span> <span class="">CREATE AN ACCOUNT VIA EMAIL</span>
+                    </button>
+                </div>
+
+
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </section>
+<app-footer></app-footer>
+</main>
