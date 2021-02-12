@@ -31,7 +31,7 @@
               "src/styles.css"
             ],
             "scripts": [
-
+              "../node_modules/popper.js/dist/umd/popper.min.js"
             ]
           },
           "configurations": {
@@ -96,7 +96,7 @@
               "src/styles.css"
             ],
             "scripts": [
-
+              "../node_modules/popper.js/dist/umd/popper.min.js"
             ]
           }
         },
