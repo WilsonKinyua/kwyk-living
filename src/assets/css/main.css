@@ -956,8 +956,8 @@ pre code {
 
 
 .gradient {
-	background: rgb(238,174,202);
-	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(61,88,120,1) 54%);
+  background: rgb(143,111,254);
+  background: linear-gradient(0deg, rgba(143,111,254,1) 0%, rgba(89,178,254,1) 100%);
 }
 
 .gradient .p1 {
