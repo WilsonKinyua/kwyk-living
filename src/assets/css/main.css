@@ -144,6 +144,22 @@
 	padding: 20px;
 }
 
+.banner-text {
+  font-size: 15px;
+}
+
+@media (max-width:576px) {
+	.collections .banner-item img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+	}
+  .banner-text {
+    font-size: 10px;
+  }
+
+}
+
 .ads_display {
 	margin-top: 20px;
 	padding: 10px;
