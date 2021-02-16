@@ -1,24 +1,21 @@
+import { SingleProductPageComponent } from './components/single-product-page/single-product-page.component';
+import { LoginComponent } from './components/login/login.component';
+import { OrdersComponent } from './components/orders/orders.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CartComponent } from './cart/cart.component';
-import { HeaderComponent } from './header/header.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { KonnectComponent } from './konnect/konnect.component';
-import { LoginComponent } from './login/login.component';
-import { OrdersComponent } from './orders/orders.component';
-import { SingleItemComponent } from './single-item/single-item.component';
-import { SingleShopProductsListComponent } from './single-shop-products-list/single-shop-products-list.component';
+import { CartComponent } from './components/cart/cart.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { KonnectComponent } from './components/konnect/konnect.component';
+import { SingleShopProductsListComponent } from './components/single-shop-products-list/single-shop-products-list.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'single-item', component: SingleItemComponent },
-  { path: 'header', component: HeaderComponent },
-  { path: 'myaccount/cart', component: CartComponent },
-  { path: 'kwyk/konnect', component: KonnectComponent },
-  { path: 'account/orders', component: OrdersComponent },
-  { path: 'account/login', component: LoginComponent },
-  { path: 'shops/products-list', component: SingleShopProductsListComponent }
+  { path: '', component: HomepageComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'konnect', component: KonnectComponent },
+  { path: 'orders', component: OrdersComponent },
+  { path: 'myaccount/sign-in', component: LoginComponent },
+  { path: 'product-details', component: SingleProductPageComponent },
+  { path: 'shop/shops-products', component: SingleShopProductsListComponent }
 ];
 
 @NgModule({

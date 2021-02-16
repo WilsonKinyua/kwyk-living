@@ -27,8 +27,8 @@
                             "src/styles.css"
                         ],
                         "scripts": [
-                            "../node_modules/jquery/dist/jquery.min.js",
-                            "../src/assets/js/bottom.js"
+                            "./node_modules/jquery/dist/jquery.min.js",
+                            "./src/assets/js/bottom.js"
                         ]
                     },
                     "configurations": {

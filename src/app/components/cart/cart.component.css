@@ -1,0 +1,16 @@
+#card-container-h1 {
+  padding: 20px!important;
+  background-color: rgb(255, 255, 255);
+}
+
+.cart-item {
+  padding: 20px;
+}
+
+#cart-icon i {
+  color: red !important;
+}
+
+.cart-grid-right .cart-summary {
+  background-color: rgb(255, 255, 255);
+}

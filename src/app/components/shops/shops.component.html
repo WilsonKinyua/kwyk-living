@@ -1,0 +1,20 @@
+<section class="container mb-2">
+  <h1 class="separate "><span>Outlets Near You</span><a href="#">See More <i style="color: black !important;" class="fas fa-greater-than"></i></a></h1>
+  <div class="first">
+    <div class="home-ban">
+      <div class="row" *ngFor="let item of shops | slice:0:9">
+        <div class="col col-md-2 col-xs-4">
+          <div class="banner-item">
+            <a routerLink="shop/shops-products">
+              <img src="{{item.logo}}" alt="" />
+              <!-- <h1 class="see">See More</h1> -->
+              <h1 class="mt-2">{{item.sellerInfo.shop}}</h1>
+            </a>
+          </div>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,46 +1,55 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { SingleItemComponent } from './single-item/single-item.component';
-import { HomeSlidesComponent } from './home-page/home-slides/home-slides.component';
-import { PopularOnKwykComponent } from './home-page/popular-on-kwyk/popular-on-kwyk.component';
-import { FeaturedCategoriesComponent } from './home-page/featured-categories/featured-categories.component';
-import { FeaturedProductsComponent } from './home-page/featured-products/featured-products.component';
-import { OutletsNearYouComponent } from './home-page/outlets-near-you/outlets-near-you.component';
-import { SingleShopProductsListComponent } from './single-shop-products-list/single-shop-products-list.component';
-import { CartComponent } from './cart/cart.component';
-import { KonnectComponent } from './konnect/konnect.component';
-import { OrdersComponent } from './orders/orders.component';
-import { LoginComponent } from './login/login.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CartComponent } from './components/cart/cart.component';
+import { LoginComponent } from './components/login/login.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { SingleShopProductsListComponent } from './components/single-shop-products-list/single-shop-products-list.component';
+import { SingleProductPageComponent } from './components/single-product-page/single-product-page.component';
+import { KonnectComponent } from './components/konnect/konnect.component';
+import { ShopsComponent } from './components/shops/shops.component';
+import { TopBannerslideComponent } from './components/top-bannerslide/top-bannerslide.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { PopularOnKwykComponent } from './components/popular-on-kwyk/popular-on-kwyk.component';
+import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
+import { FeaturedCategoriesComponent } from './components/featured-categories/featured-categories.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent,
+    HomepageComponent,
     HeaderComponent,
     FooterComponent,
-    SingleItemComponent,
-    HomeSlidesComponent,
-    PopularOnKwykComponent,
-    FeaturedCategoriesComponent,
-    FeaturedProductsComponent,
-    OutletsNearYouComponent,
-    SingleShopProductsListComponent,
     CartComponent,
-    KonnectComponent,
-    OrdersComponent,
     LoginComponent,
+    OrdersComponent,
+    SingleShopProductsListComponent,
+    SingleProductPageComponent,
+    KonnectComponent,
+    ShopsComponent,
+    TopBannerslideComponent,
+    CategoriesComponent,
+    PopularOnKwykComponent,
+    FeaturedProductsComponent,
+    FeaturedCategoriesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [],
+  providers: [
+    // {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,7 @@
+/* .banner-item img {
+  border-radius: 80%;
+  border: 2px solid black;
+} */
+.banner-item {
+  border-right: 2px solid rgb(197, 197, 197);
+}
