@@ -36528,7 +36528,8 @@ main {
 .banner-items .mt-1 {
     font-size: 1.0rem;
     font-weight: 700;
-    text-align:center!important;
+    /* margin-bottom: 120px; */
+    /* text-align:center!important; */
 }
 
 /* .bannerimg {

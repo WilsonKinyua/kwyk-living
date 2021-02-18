@@ -3,65 +3,17 @@
   <div class="first">
     <div class="home-ban">
       <div class="row">
-        <div class="col col-md-2 col-xs-4">
-          <div class="banner-item">
-            <a routerLink="shop/shops-products">
-              <img src="https://firebasestorage.googleapis.com/v0/b/kwikapp-77d77.appspot.com/o/Kipusa%20Beauty%2Fkipusalogo.jpg?alt=media&token=89707d39-2e92-4f61-aa48-9df4fc24e270" alt="" />
-              <!-- <h1 class="see">See More</h1> -->
-              <h1 class="mt-2">Shop 2</h1>
-            </a>
-          </div>
-        </div>
-        <div class="col col-md-2 col-xs-4">
-          <div class="banner-item">
 
-            <a routerLink="shop/shops-products">
-              <img src="https://firebasestorage.googleapis.com/v0/b/kwikapp-77d77.appspot.com/o/Kipusa%20Beauty%2Fkipusalogo.jpg?alt=media&token=89707d39-2e92-4f61-aa48-9df4fc24e270" alt="" />
-              <!-- <h1 class="see">See More</h1> -->
-              <h1 class="mt-2">Shop 2</h1>
-            </a>
-          </div>
-        </div>
-        <div class="col col-md-2 col-xs-4">
+        <div *ngFor="let item of shops" class="fp account-link col-md-2 col-xs-4">
           <div class="banner-item">
-
             <a routerLink="shop/shops-products">
-              <img src="https://firebasestorage.googleapis.com/v0/b/kwikapp-77d77.appspot.com/o/Kipusa%20Beauty%2Fkipusalogo.jpg?alt=media&token=89707d39-2e92-4f61-aa48-9df4fc24e270" alt="" />
+              <img src="{{item.logo}}" alt="" />
               <!-- <h1 class="see">See More</h1> -->
-              <h1 class="mt-2">Shop 3</h1>
+              <h1 class="mt-2">{{item.sellerInfo.shop}}</h1>
             </a>
           </div>
         </div>
-        <div class="col col-md-2 col-xs-4">
-          <div class="banner-item">
 
-            <a routerLink="shop/shops-products">
-              <img src="https://firebasestorage.googleapis.com/v0/b/kwikapp-77d77.appspot.com/o/Kipusa%20Beauty%2Fkipusalogo.jpg?alt=media&token=89707d39-2e92-4f61-aa48-9df4fc24e270" alt="" />
-              <!-- <h1 class="see">See More</h1> -->
-              <h1 class="mt-2">Shop 4</h1>
-            </a>
-          </div>
-        </div>
-        <div class="col col-md-2 col-xs-4">
-          <div class="banner-item">
-
-            <a routerLink="shop/shops-products">
-              <img src="https://firebasestorage.googleapis.com/v0/b/kwikapp-77d77.appspot.com/o/Kipusa%20Beauty%2Fkipusalogo.jpg?alt=media&token=89707d39-2e92-4f61-aa48-9df4fc24e270" alt="" />
-              <!-- <h1 class="see">See More</h1> -->
-              <h1 class="mt-2">Shop 5</h1>
-            </a>
-          </div>
-        </div>
-        <div class="col col-md-2 col-xs-4">
-          <div class="banner-item">
-
-            <a routerLink="shop/shops-products">
-              <img src="https://firebasestorage.googleapis.com/v0/b/kwikapp-77d77.appspot.com/o/Kipusa%20Beauty%2Fkipusalogo.jpg?alt=media&token=89707d39-2e92-4f61-aa48-9df4fc24e270" alt="" />
-              <!-- <h1 class="see">See More</h1> -->
-              <h1 class="mt-2">Shop 2</h1>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </div>

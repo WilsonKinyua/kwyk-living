@@ -20,6 +20,8 @@ import { PopularOnKwykComponent } from './components/popular-on-kwyk/popular-on-
 import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
 import { FeaturedCategoriesComponent } from './components/featured-categories/featured-categories.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [
     // {provide: LocationStrategy, useClass: HashLocationStrategy}
