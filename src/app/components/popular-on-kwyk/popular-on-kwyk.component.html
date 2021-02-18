@@ -79,16 +79,16 @@
 
         <div *ngFor="let item of hotDeals" class="fp account-link col-md-2 col-xs-4">
           <div class="banner-item">
-            <a routerLink="shop/shops-products">
+            <a>
               <img src="{{ item.image }}" alt="" />
               <div class="product_desc">
                 <div class="inner_desc">
-                  <h3 itemprop="name"><a routerLink="product-details" class="product_name one_line"
+                  <h3 itemprop="name"><a class="product_name one_line"
                       title="Aloe Vera Oil for men">{{ item.product }}</a></h3>
-                  <div class="manufacturer"><a routerLink="shop/shops-products">{{ item.shop }}</a></div>
+                  <div class="manufacturer"><a>{{ item.shop }}</a></div>
                   <div class="product-price-and-shipping">
                     <span class="sr-only">Regular price</span>
-                    <span class="regular-price">Ksh {{ ((item.currentprice * (item.discount/(100))) )}}</span>
+                    <!-- <span class="regular-price">Ksh {{ ((item.currentprice * (item.discount/(100))) )}}</span> -->
                     <span class="sr-only">Price</span> <br>
                     <span itemprop="price" class="price price-sale">Ksh {{ item.currentprice }}</span>
                     <!-- <span class="discount-percentage discount-product">-{{ item.discount}}%</span> -->
