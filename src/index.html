@@ -47,13 +47,26 @@
     </style>
 
 </head>
-<body itemscope itemtype="http://schema.org/WebPage" id="index" class="lang-en country-us currency-usd layout-full-width page-index tax-display-disabled">
+<body itemscope itemtype="http://schema.org/WebPage" id="index" onload="myFunction()" class="lang-en country-us currency-usd layout-full-width page-index tax-display-disabled">
 
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" >
     <app-root></app-root>
+  </div>
 
+
+  <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 1000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
     <script src="assets/js/bottom.js"></script>
     <script src="assets/js/main.min.js"></script>
     <script src="assets/js/script.js"></script>
-
 </body>
 </html>
