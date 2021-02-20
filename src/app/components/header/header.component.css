@@ -1,6 +1,9 @@
-.topnav-right  {
-  color: red;
+@media (max-width:1199px) {
+  .logo {
+    height: 3px;
+  }
 }
-/* .topnav-right .fas {
-  color: red;
-} */
+
+.logo {
+  height: 50px;
+}
