@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FirestoreService } from 'src/app/services/firestore.service';
 import { Popular } from '../models/popular';
@@ -9,27 +10,14 @@ import { Popular } from '../models/popular';
 })
 export class PopularOnKwykComponent implements OnInit {
 
-  hotDeals: Popular[];
-  unfilteredHotDeals: Popular[];
+  hotDeals!: Popular[];
+  unfilteredHotDeals!: Popular[];
 
-  constructor(public fireApi: FirestoreService) { }
+  constructor(public fireApi: FirestoreService, private route: Router) { }
 
   ngOnInit(): void {
     this.getHotDeals()
   }
-
-  // getHotDeals() {
-  //   this.fireApi.getHotDeals()
-  //   .subscribe(res => {
-  //     this.hotDeals = res;
-  //      console.log('popular',this.hotDeals);
-  //     this.hotDeals.forEach((item, index) => {
-  //       console.log(index);
-  //       if(index < 12) {
-  //           setTimeout(()=>300)
-  //       }
-  //     })
-  //   })
 
     getHotDeals() {
       this.fireApi.getHotDeals().subscribe(res => {
@@ -43,5 +31,11 @@ export class PopularOnKwykComponent implements OnInit {
         })
       })
       console.log(this.hotDeals)
+    }
+
+    // Getting products details
+    getProductDetails(pdetails:any) {
+      console.log(pdetails);
+      this.route.navigateByUrl("product-details", {state: pdetails});
     }
   }

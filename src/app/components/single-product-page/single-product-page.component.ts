@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleProductPageComponent implements OnInit {
 
-  constructor() { }
+  sp:any;
+  constructor() {
+    this.sp = history.state;
+   }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -21,11 +21,11 @@
               <div class="row ">
                 <div class="col-md-6 ">
                   <ul class="product-flag">
-                    <li class=" discount">-10%</li>
+                    <li class=" discount">-{{ sp.discount }}%</li>
                     <li class=" new">New</li>
                   </ul>
-                  <a href="assets/img/13.jpg">
-                    <img class="" style="width:100%;" src="assets/img/13.jpg" alt="" title=""
+                  <a href="{{ sp.image }}">
+                    <img class="product-image" src="{{ sp.image }}" alt="" title=""
                       itemprop="image">
                   </a>
 
@@ -33,10 +33,10 @@
                 </div>
                 <div class="col-md-6 ">
                   <div class="content_info">
-                    <h1 class="h1 namne_details" itemprop="name">Item name Item name Item name Item name</h1>
+                    <h1 class="h1 namne_details" itemprop="name">{{ sp.product }}</h1>
                     <div id="product_comments_block_extra" class="no-print" itemprop="aggregateRating" itemscope
                       itemtype="https://schema.org/AggregateRating">
-                      <div class="comments_note clearfix">
+                      <!-- <div class="comments_note clearfix">
                         <span>Rating&nbsp;</span>
                         <div class="star_content clearfix">
                           <div class="star star_on"></div>
@@ -48,7 +48,8 @@
                           <meta itemprop="ratingValue" content="4.5" />
                           <meta itemprop="bestRating" content="5" />
                         </div>
-                      </div> <!-- .comments_note -->
+                      </div> -->
+                      <!-- .comments_note -->
                     </div>
                     <!--  /Module ProductComments -->
                     <div class="product-prices">
@@ -61,9 +62,9 @@
                         <meta itemprop="priceCurrency" content="USD">
 
                         <div class="current-price">
-                          <span itemprop="price" content="21.51">$21.51</span>
+                          <span itemprop="price" content="21.51">Ksh {{ sp.currentprice }}</span>
 
-                          <span class="discount discount-percentage">Save 10%</span>
+                          <span class="discount discount-percentage">Save {{ sp.discount }}%</span>
                         </div>
 
 
@@ -81,9 +82,9 @@
                       <div id="product-description-short-1" class="product-description-short" itemprop="description">
                         <ul>
                           <li>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, eligendi!</div>
+                            <div>{{ sp.description }}</div>
                           </li>
-                          <li>
+                          <!-- <li>
                             <div><em>Part of the Kaval Collection.</em></div>
                           </li>
                           <li>
@@ -91,7 +92,7 @@
                           </li>
                           <li>
                             <div>Plain-woven jacket specifically constructed for freedom of movement.</div>
-                          </li>
+                          </li> -->
                         </ul>
                       </div>
 
@@ -108,7 +109,7 @@
                                 <option value="4" title="XL">XL</option>
                               </select>
                             </div> -->
-                            <div class="clearfix product-variants-item">
+                            <!-- <div class="clearfix product-variants-item">
                               <span class="control-label">Color</span>
                               <ul id="group_2">
                                 <li class="float-xs-left input-container">
@@ -128,7 +129,7 @@
                                   </label>
                                 </li>
                               </ul>
-                            </div>
+                            </div> -->
                           </div>
                           <section class="product-discounts">
                           </section>
@@ -137,10 +138,10 @@
 
 
                             <div class="product-quantity clearfix">
-                              <div class="qty">
+                              <!-- <div class="qty">
                                 <input type="text" name="qty" id="quantity_wanted" value="1" class="input-group" min="1"
                                   aria-label="Quantity">
-                              </div>
+                              </div> -->
 
                               <div class="add">
                                 <button class="btn btn-primary " data-button-action="add-to-cart" type="submit">
@@ -234,9 +235,11 @@
                       <div class="product-description">
                         <ul>
                           <li>
-                            <div>Block out the haters with the fresh adidas® Originals Kaval Windbreaker Jacket.</div>
+                            <div>
+                              {{ sp.description }}
+                            </div>
                           </li>
-                          <li>
+                          <!-- <li>
                             <div><em>Part of the Kaval Collection.</em></div>
                           </li>
                           <li>
@@ -278,7 +281,7 @@
                           <li>
                             <div>Product measurements were taken using size MD. Please note that measurements may vary
                               by size.</div>
-                          </li>
+                          </li> -->
                         </ul>
                       </div>
 

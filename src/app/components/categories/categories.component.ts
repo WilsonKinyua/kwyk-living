@@ -10,8 +10,8 @@ import { Category } from '../models/categories';
 })
 export class CategoriesComponent implements OnInit {
 
-  categories: Category[];
-  unfilteredCategories: Category[];
+  categories!: Category[];
+  unfilteredCategories!: Category[];
 
   constructor(public fireApi: FirestoreService) { }
 

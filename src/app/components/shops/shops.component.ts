@@ -10,8 +10,8 @@ import { Shops } from '../models/shops';
 })
 export class ShopsComponent implements OnInit {
 
-  shops: Shops[];
-  unfilteredShops: Shops[];
+  shops!: Shops[];
+  unfilteredShops: Shops[] = [];
 
   constructor(public fireApi: FirestoreService, private router: Router) { }
 

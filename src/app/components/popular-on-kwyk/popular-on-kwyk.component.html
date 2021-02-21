@@ -79,7 +79,7 @@
 
         <div *ngFor="let item of hotDeals" class="fp account-link col-md-2 col-xs-4">
           <div class="banner-item">
-            <a>
+            <a (click)="getProductDetails(item)">
               <img src="{{ item.image }}" alt="" />
               <div class="product_desc">
                 <div class="inner_desc">

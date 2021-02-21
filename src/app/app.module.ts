@@ -24,6 +24,8 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { ShopDetailsComponent } from './components/shops/shop-details/shop-details.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
     FeaturedProductsComponent,
     FeaturedCategoriesComponent,
     ShopDetailsComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ContactUsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

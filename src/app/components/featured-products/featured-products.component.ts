@@ -8,16 +8,16 @@ import { DatabaseService } from 'src/app/services/database.service';
 })
 export class FeaturedProductsComponent implements OnInit {
 
-  featuredProducts = [];
+  featuredProducts:any = [];
 
-  constructor( public database: DatabaseService,) { }
+  constructor(public database: DatabaseService,) { }
 
   ngOnInit(): void {
     this.getProducts();
   }
 
   shuffle(ProductPool: any[]) {
-    for (let i = ProductPool.length - 1; i > 0; i--) {
+    for(let i = ProductPool.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       const temp = ProductPool[i];
       ProductPool[i] = ProductPool[j];
