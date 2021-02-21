@@ -22,6 +22,8 @@ import { FeaturedCategoriesComponent } from './components/featured-categories/fe
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { ShopDetailsComponent } from './components/shops/shop-details/shop-details.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { environment } from 'src/environments/environment';
     CategoriesComponent,
     PopularOnKwykComponent,
     FeaturedProductsComponent,
-    FeaturedCategoriesComponent
+    FeaturedCategoriesComponent,
+    ShopDetailsComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

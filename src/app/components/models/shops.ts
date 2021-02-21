@@ -7,7 +7,7 @@ export class Shops {
     cover?:any;
     logo?:any;
     deliverTime?:any;
-    id?:any;
+    id?: any;
 }
 export class Shop {
     key?:any;

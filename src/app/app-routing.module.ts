@@ -1,3 +1,5 @@
+import { NotfoundComponent } from './components/notfound/notfound.component';
+import { ShopDetailsComponent } from './components/shops/shop-details/shop-details.component';
 import { SingleProductPageComponent } from './components/single-product-page/single-product-page.component';
 import { LoginComponent } from './components/login/login.component';
 import { OrdersComponent } from './components/orders/orders.component';
@@ -15,7 +17,11 @@ const routes: Routes = [
   { path: 'orders', component: OrdersComponent },
   { path: 'myaccount/sign-in', component: LoginComponent },
   { path: 'product-details', component: SingleProductPageComponent },
-  { path: 'shop/shops-products', component: SingleShopProductsListComponent }
+  { path: 'shop', component: ShopDetailsComponent },
+  // { path: 'shop/:shop_Id/:shop_name', component: ShopDetailsComponent },
+  { path: 'shop/shops-products', component: SingleShopProductsListComponent },
+  { path: '**', component: NotfoundComponent },
+
 ];
 
 @NgModule({

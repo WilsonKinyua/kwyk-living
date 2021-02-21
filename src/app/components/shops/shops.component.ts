@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { FirestoreService } from 'src/app/services/firestore.service';
 import { Shops } from '../models/shops';
 
@@ -9,10 +10,10 @@ import { Shops } from '../models/shops';
 })
 export class ShopsComponent implements OnInit {
 
-  shops: Shops[] | undefined;
+  shops: Shops[];
   unfilteredShops: Shops[];
 
-  constructor(public fireApi: FirestoreService) { }
+  constructor(public fireApi: FirestoreService, private router: Router) { }
 
   ngOnInit(): void {
     this.getShops();
@@ -31,6 +32,12 @@ export class ShopsComponent implements OnInit {
           }
         })
       });
+  }
+
+  goToNewPage(item:any) {
+      console.log(item);
+      this.router.navigateByUrl("shop",{state: item});
+    // }
   }
 
 }

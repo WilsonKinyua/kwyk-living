@@ -10,6 +10,7 @@ import { Shops } from 'src/app/components/models/shops';
 import { Category } from 'src/app/components/models/categories';
 import { map } from 'rxjs/operators';
 import { Popular } from '../components/models/popular';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -27,8 +28,8 @@ export class FirestoreService {
       map(actions => {
         return actions.map(a => {
           const data = a.payload.doc.data();
-          // const id = a.payload.doc.id;
-          return { ...data };
+          const id = a.payload.doc.id;
+          return { id, ...data };
         })
       })
     )
