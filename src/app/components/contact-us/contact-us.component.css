@@ -41,3 +41,7 @@
   background-color: black;
   color: white;
 } */
+
+input[type=text], input[type=email], textarea{
+  border-radius: 20px;
+}
