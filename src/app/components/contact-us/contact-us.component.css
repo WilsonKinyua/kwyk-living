@@ -1,0 +1,43 @@
+.crd {
+  background-color: white !important;
+}
+
+.cu {
+  text-align: center;
+  font-size: 40px;
+  color: #59B2FE;
+}
+.bt {
+  text-align: center;
+  font-size: 20px;
+  color: #59B2FE;
+  margin: 20px auto;
+}
+.cus {
+  text-align: center;
+  font-size: 30px;
+  color: #59B2FE;
+}
+.btn {
+  padding: 20px;
+  font-size: 20px;
+  color: white !important;
+  background-color: #59B2FE;
+}
+
+.pp {
+  text-align: center;
+  margin: 20px auto;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn-block {
+  background-color: #59B2FE;
+}
+
+
+/* .btn-block:hover {
+  background-color: black;
+  color: white;
+} */

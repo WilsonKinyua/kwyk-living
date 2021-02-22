@@ -1,1 +1,119 @@
-<p>contact-us works!</p>
+<main>
+
+  <app-header>
+
+  </app-header>
+
+  <aside id="notifications">
+    <div class="container">
+
+
+
+    </div>
+  </aside>
+
+
+  <section id="wrapper">
+
+    <div class="container">
+
+
+      <section id="content">
+        <div class="row">
+          <div style="margin-top: 20px;" class="col-md-12">
+            <section style="margin-top: 20px;" id="js-checkout-summary" class="crd card js-cart" data-refresh-url="#">
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                  <div class="mt-3">
+                    <h1 class="cu">Contact Us</h1>
+                    <h1 class="cus mt-3 mb-3">How can we help you ?</h1>
+                  </div>
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+              <div class="content">
+                <ul style="padding: 20px; text-align:center" class="nav nav-inline my-2" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active btn btn-primary" data-toggle="tab" href="#checkout-guest-form" role="tab"
+                      aria-controls="checkout-guest-form" aria-selected="true">
+                      Write to us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <span href="nav-separator"> | </span>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-primary" data-link-action="show-login-form" data-toggle="tab"
+                      href="#checkout-login-form" role="tab" aria-controls="checkout-login-form">
+                      Call Us
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="checkout-guest-form" role="tabpanel">
+                   <p class="pp">Our customer service cannot receive calls at the moment but is always available to respond to your requests. You can contact us by filling out the online form on this page, and we will get back to you within 2 working days (our usual deadline).</p>
+                    <form action="#" id="customer-form" class="js-customer-form" method="post">
+                      <section>
+                        <div class="form-group row ">
+                          <div class="form-group col-md-6">
+                            <input class="form-control" name="firstname" type="text" value="" placeholder ="Enter your name" required>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <input class="form-control" name="email" type="email" value="" required placeholder="Enter your email">
+                          </div>
+                        </div>
+
+                        <div class="form-group row ">
+                          <div class="form-group col-md-6">
+                            <input class="form-control" name="digit" type="text" value="" placeholder ="Enter your 9-digit order number (e.g., 374929453)" required>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <input class="form-control" name="text" type="text" value="" placeholder ="Enter your subject" required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="form-group col-md-12">
+                           <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Give full details of your contact reason here"></textarea>
+                          </div>
+                        </div>
+                      </section>
+
+                      <footer class="form-footer clearfix">
+                        <input type="hidden" name="submitCreate" value="1">
+
+                       <div class="row">
+                         <div class="col-md-12">
+                          <button class="btn btn-primary btn-lg btn-block" name="continue" type="submit" value="1">
+                          Submit
+                        </button>
+                         </div>
+                       </div>
+
+                      </footer>
+
+
+                    </form>
+
+
+                  </div>
+                  <div class="tab-pane " id="checkout-login-form" role="tabpanel" aria-hidden="true">
+                    <h1 class="cu">0711 011 011</h1>
+                    <h2 class="bt">Service Hours: Mon-Fri, 8am-8pm; Weekends & Public Holidays, 9am-3pm.</h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </section>
+
+  <app-footer></app-footer>
+</main>
