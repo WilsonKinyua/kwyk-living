@@ -17,9 +17,6 @@ import { Observable } from 'rxjs';
 })
 export class FirestoreService {
 
-  // variables
-  allList: AngularFirestoreCollection<Shops> = null;
-
   constructor(public fs: AngularFirestore) { }
 
   //get the list of shops
