@@ -17,12 +17,15 @@ import { Observable } from 'rxjs';
 })
 export class FirestoreService {
 
+  // variables
+  allList: AngularFirestoreCollection<Shops> = null;
+
   constructor(public fs: AngularFirestore) { }
 
   //get the list of shops
   getShops() {
     let ref = this.fs.collection<Shops>('shops', ref => {
-      return ref.orderBy('Date', 'desc').limit(6);
+      return ref.orderBy('Date', 'asc').limit(6);
     });
     return ref.snapshotChanges().pipe(
       map(actions => {
@@ -34,6 +37,23 @@ export class FirestoreService {
       })
     )
   }
+
+  // get the list of all shops and details
+
+    getAllShops() {
+      let ref = this.fs.collection<Shops>('shops', ref => {
+        return ref.orderBy('Date', 'desc');
+      });
+      return ref.snapshotChanges().pipe(
+        map(actions => {
+          return actions.map(a => {
+            const data = a.payload.doc.data();
+            const id = a.payload.doc.id;
+            return { id, ...data };
+          })
+        })
+      )
+    }
 
   // get the list of categories
   getCategories(){

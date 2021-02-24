@@ -26,6 +26,7 @@ import { ShopDetailsComponent } from './components/shops/shop-details/shop-detai
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ShopsListComponent } from './components/shops-list/shops-list.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     ShopDetailsComponent,
     NotfoundComponent,
     ContactUsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ShopsListComponent
   ],
   imports: [
     BrowserModule,

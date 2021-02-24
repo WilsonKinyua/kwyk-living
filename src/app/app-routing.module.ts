@@ -1,3 +1,4 @@
+import { ShopsListComponent } from './components/shops-list/shops-list.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ShopDetailsComponent } from './components/shops/shop-details/shop-details.component';
@@ -19,7 +20,9 @@ const routes: Routes = [
   { path: 'myaccount/sign-in', component: LoginComponent },
   { path: 'product-details', component: SingleProductPageComponent },
   { path: 'shop', component: ShopDetailsComponent },
+  { path: 'all-shops', component: ShopsListComponent },
   // { path: 'shop/:shop_Id/:shop_name', component: ShopDetailsComponent },
+  // {path: 'shop/shop-details/:shop_Id', component: ShopDetailsComponent},
   { path: 'shop/shops-products', component: SingleShopProductsListComponent },
   {path: 'contact-us', component: ContactUsComponent},
   { path: '**', component: NotfoundComponent },

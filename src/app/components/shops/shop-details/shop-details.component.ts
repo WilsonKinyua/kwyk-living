@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ShopDetailsComponent implements OnInit {
 
   si: any;
-  constructor() {
+  constructor(private fireApi: FirestoreService) {
     this.si = history.state;
    }
 

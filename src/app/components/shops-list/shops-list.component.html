@@ -1,0 +1,44 @@
+<main>
+
+  <app-header>
+
+  </app-header>
+  <aside id="notifications">
+    <div class="container">
+    </div>
+  </aside>
+
+  <section class="wrapper">
+
+    <div class="container">
+      <div class="row">
+
+        <div *ngFor="let item of shops" class="col-md-3 col-xs-12">
+          <div class="card">
+            <img class="card-img-top" src="{{ item.logo }}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.sellerInfo.shop }}</h5>
+              <!-- <p class="card-text">{{ item.businessInfo.description }}</p> -->
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ">Operating hrs: {{ item.businessInfo.Open }} - {{ item.businessInfo.Close }}</li>
+              <li class="list-group-item "><i class="fa fa-envelope"></i>Email:<a href="mailto:{{ item.sellerInfo.Email }}">{{ item.sellerInfo.Email }}</a></li>
+              <li class="list-group-item "><i class="fas fa-phone-square-alt"></i>Phone: <a href="tel:{{ item.sellerInfo.Contacts }}">{{ item.sellerInfo.Contacts }}</a></li>
+              <li class="list-group-item "><i class="fas fa-globe"></i> <a class="btn btn-primary btn-xs" target="_blank" href="http://{{ item.businessInfo.Website }}">View Website </a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <br>
+  <app-footer>
+
+  </app-footer>
+
+
+</main>
